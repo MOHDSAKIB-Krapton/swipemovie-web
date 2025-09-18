@@ -25,7 +25,7 @@ const InfiniteRow = ({
 
   // Calculate duration: Lower 'speed' means slower movement, so a longer 'duration'.
   // Using an arbitrary base: 50 speed = 10s duration.
-  const baseDuration = 500; // in seconds (e.g., totalWidth / 500 = seconds)
+  // const baseDuration = 500; // in seconds (e.g., totalWidth / 500 = seconds)
   const duration = (totalWidth / speed) * 0.5; // Adjusted heuristic for a good feel
 
   const animationName = direction === "left" ? "scroll-left" : "scroll-right";

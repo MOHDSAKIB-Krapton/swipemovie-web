@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { MOCK_MOVIES } from "@/constants/index";
 import { Calendar, Globe, TimerIcon } from "lucide-react";
 import TextAnimation from "./animations/text";
+import Image from "next/image";
 
 export default function HeroCarousel({
   cards = [...MOCK_MOVIES, ...MOCK_MOVIES, ...MOCK_MOVIES],
@@ -81,9 +82,11 @@ export default function HeroCarousel({
                     transformStyle: "preserve-3d",
                   }}
                 >
-                  <img
+                  <Image
                     src={card.image}
                     alt="taste"
+                    fill
+                    title={card.title}
                     className="w-full h-full object-cover"
                   />
 

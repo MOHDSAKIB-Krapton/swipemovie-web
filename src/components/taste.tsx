@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import TextAnimation from "./animations/text";
 import { MOCK_MOVIES } from "@/constants";
+import Image from "next/image";
 
 export default function TasteSection({
   cards = [...MOCK_MOVIES, ...MOCK_MOVIES, ...MOCK_MOVIES],
@@ -79,9 +80,11 @@ export default function TasteSection({
                     transformStyle: "preserve-3d",
                   }}
                 >
-                  <img
+                  <Image
                     src={card.image}
                     alt="taste"
+                    fill
+                    title={card.title}
                     className="w-full h-full object-cover"
                   />
                 </motion.div>

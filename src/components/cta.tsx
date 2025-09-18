@@ -6,7 +6,7 @@ const CTA = () => {
       <div className="flex flex-col justify-center items-center bg-white p-8 rounded-lg my-20 shadow-lg gap-10">
         <div className="text-black text-center">
           <h3 className="text-2xl font-bold">
-            Stop scrolling. Start discovering films you'll actually watch.
+            Stop scrolling. Start discovering films you&apos;ll actually watch.
           </h3>
           <p className="mt-1">
             Join thousands rewriting their watchlists with signal over noise.
